@@ -1,0 +1,17 @@
+@import "../stars-template/stars-template.wxss";
+
+.movie {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie .movie-pic {
+    width: 220rpx;
+    height: 320rpx;
+}
+
+.movie-name {
+    font-size: 24rpx;
+    color: #333;
+    padding-top: 10rpx;
+}

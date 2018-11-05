@@ -1,0 +1,33 @@
+@import "../movie-template/movie-template.wxss";
+
+
+.movie-list-container{
+    padding:0 20rpx 20rpx 20rpx;
+    margin-bottom: 20rpx;
+    background-color: #fff;
+}
+.movie-x{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between; 
+}
+.head-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20rpx 0;
+}
+.head-title text{
+    font-size:22rpx;
+    color: #666;
+}
+.more-movie{
+    display:flex;
+    align-items: center;
+}
+.head-title image{
+    width: 15rpx;
+    height: 15rpx;
+    margin-left: 5rpx;
+}

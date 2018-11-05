@@ -1,0 +1,19 @@
+<!-- 引入列表模板 -->
+<import src="list-template/list-template.wxml" />
+
+<view>
+    <!-- banner轮播 -->
+    <swiper autoplay="true" indicator-dots="true" interval="4000" indicator-active-color="#b3d4db" circular="true">
+        <view wx:for="{{carousel}}" wx:for-item="slides" wx:key="*this" bindtap="linkDetail" data-postId="{{slides.postId}}">
+            <swiper-item>
+                <image class="banner-img" src="{{slides.imgSrc}}"></image>
+            </swiper-item>
+        </view>
+    </swiper>
+    <!-- banner轮播END -->
+
+    <!-- 内容列表 -->
+    <view class="list-container">
+        <template is="lists" data="{{listInfo}}"></template>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+<import src="../stars-template/stars-template.wxml" />
+<template name="movie">
+    <view class="movie" bindtap="linkDetail" data-id="{{movieId}}">
+        <image class="movie-pic" src="{{coverageUrl}}"></image>
+        <text class="movie-name">{{title}}</text>
+        <template is="stars" data="{{stars:stars,score:average}}"></template>
+    </view>
+</template>

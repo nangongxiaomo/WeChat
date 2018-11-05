@@ -1,0 +1,63 @@
+<import src="../stars-template/stars-template.wxml" />
+
+<view class="detail-container">
+    <view class="relative">
+        <image class="head-img" mode="aspectFill" src="{{movie.movieImg}}"></image>
+        <view class="movie-head">
+            <view class="movie-name">
+                <text>{{movie.movieName}}</text>
+            </view>
+            <view class="area-year">
+                <text>{{movie.movieArea}} · {{movie.movieYears}}</text>
+            </view>
+            <view class="like">
+                <text class="color">{{movie.movieLike}}</text>
+                <text>人喜欢</text>
+                <text class="color">{{movie.movieComments}}</text>
+                <text>人评论</text>
+            </view>
+        </view>
+        <image class="movie-img" src="{{movie.movieImg}}"></image>
+    </view>
+    <view class="summary-container">
+        <view class="padding template-flex">
+            <view>
+                <text class="movie-title">{{movie.movieName}}</text>
+            </view>
+            <view>
+                <text class="common">评分</text>
+                <template is="stars" data="{{stars:movie.movieStars,score:movie.movieScore}}"></template>
+            </view>
+            <view>
+                <text class="common">导演</text>
+                <text class="font-common">{{movie.movieDirector}}</text>
+            </view>
+            <view>
+                <text class="common">演员</text>
+                <text class="font-common">{{movie.movieActor}}</text>
+            </view>
+            <view>
+                <text class="common">类型</text>
+                <text class="font-common">{{movie.movieType}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="content-container">
+        <view class="padding">
+            <text class="brief">剧情简介</text>
+            <text class="content">{{movie.movieSummary}}</text>
+        </view>
+    </view>
+
+    <view class="actor-container">
+        <view class='padding'>
+            <text class="actor">演员</text>
+            <scroll-view scroll-x="true" class="scroll-view">
+                <view class='flex' wx:for="{{movie.movieActorList}}" wx:for-item="actor">
+                    <image bindtap="previewImg" data-src="{{actor.avatars.large}}" class="actor-img" src="{{actor.avatars.large}}"></image>
+                    <text class="actor-name">{{actor.name}}</text>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

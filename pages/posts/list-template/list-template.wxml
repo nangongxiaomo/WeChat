@@ -1,0 +1,24 @@
+<template name="lists">
+    <view class="list" wx:for="{{listInfo}}" wx:for-item="lists" wx:key="&this" data-postId="{{lists.postId}}" bindtap="linkDetail">
+        <view class="time-header">
+            <image src="{{lists.avatar}}"></image>
+            <text>{{lists.date}}</text>
+        </view>
+        <view class="thumbnail">
+            <image src="{{lists.imgSrc}}"></image>
+        </view>
+        <view class="content">
+            <text>{{lists.content}}</text>
+        </view>
+        <view class="person-read">
+            <view class="collection common-flex">
+                <image src="/images/icons/chat.png"></image>
+                <text>{{lists.collection}}</text>
+            </view>
+            <view class="read-num common-flex">
+                <image src="/images/icons/view.png"></image>
+                <text>{{lists.reading}}</text>
+            </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,28 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.header-img{
+    width: 160rpx;
+    height:160rpx;
+    border-radius: 50%;
+}
+.link-btn{
+    margin-top: 240rpx;
+}
+.link-btn{
+    background-color: transparent;
+    color: #405f80;
+}
+page{
+    background-color: #b3d4db;
+}
+.user-name{
+    color:#405f80;
+    font-weight: bolder;
+}

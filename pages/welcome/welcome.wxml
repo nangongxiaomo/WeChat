@@ -1,0 +1,11 @@
+<view class="container">
+    <view>
+        <image class='header-img' src='{{userHead}}'></image>
+    </view>
+    <view>
+        <text>Hello <text class="user-name">{{userNickName}}</text></text>
+    </view>
+    <view>
+        <button class="link-btn" bindtap="linkIndex">开启小程序之旅</button>
+    </view>
+</view>

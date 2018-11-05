@@ -1,0 +1,18 @@
+<view class="banner-container">
+    <image class="banner" src="{{postDetailData.imgSrc}}"></image>
+    <image catchtap="isPlay" class="music-btn" src="{{isPlayingMusic?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+</view>
+<view class="info-container">
+    <view class="author-time">
+        <image src="{{postDetailData.avatar}}"></image>
+        <text class="author">{{postDetailData.author}}</text>
+        <text class="publish">发表于</text>
+        <text>{{postDetailData.dateTime}}</text>
+    </view>
+    <text class="title">{{postDetailData.title}}</text>
+    <view class="collect-share">
+        <image bindtap="isCollection" src="{{collected?'/images/icons/collection.png':'/images/icons/collection-anti.png'}}"></image>
+        <image bindtap="isShare" src="/images/icons/share.png"></image>
+    </view>
+    <text class="info-content">{{postDetailData.detail}}</text>
+</view>

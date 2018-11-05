@@ -1,0 +1,87 @@
+/* pages/posts/post.wxss */
+
+page {
+    background-color: #f7f7f7;
+}
+
+swiper {
+    height: 240px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+/* 列表 */
+
+.list-container {
+    margin-top: 20rpx;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+    background-color: #fff;
+}
+
+.time-header {
+    display: flex;
+    align-items: center;
+    padding: 10rpx;
+}
+
+.time-header image {
+    margin-right: 20rpx;
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.time-header text {
+    font-size: 18rpx;
+}
+
+.thumbnail image {
+    width: 100%;
+}
+
+.content text {
+    display: block;
+    color: #666;
+    font-size: 24rpx;
+    letter-spacing: 2rpx;
+    padding: 0 10rpx;
+    line-height: 25px;
+}
+
+.person-read {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10rpx;
+}
+
+.collection {
+    margin-right: 20rpx;
+}
+
+.person-read image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+}
+
+.person-read text {
+    font-size: 18rpx;
+    color: #999;
+    margin-right: 10rpx;
+}
+
+.common-flex {
+    display: flex;
+    align-items: center;
+}
+.loading-icon{
+
+    
+}
